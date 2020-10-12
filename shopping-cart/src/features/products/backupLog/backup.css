@@ -1,0 +1,361 @@
+/* html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 10fr 1fr;
+  width: 1425px;
+  height: auto;
+}
+
+.col1 {
+  grid-column: 1;
+}
+
+.topLeftBox {
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  background: black;
+  position: relative;
+  bottom: 21px;
+}
+
+.col2 {
+  grid-column: 2;
+}
+
+.sidebar {
+  position: relative;
+  top: 45px;
+}
+
+.sizeHeader {
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+.sizeButtons {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  font-size: 10px;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 10px;
+}
+
+.gitHubStar {
+  font-size: 12px;
+  color: grey;
+  text-align: center;
+}
+
+.starReviews {
+  border: none;
+  margin: 0;
+  position: relative;
+  left: 50px;
+}
+
+.starReviews button {
+  width: 50px;
+  height: 27px;
+  font-size: 12px;
+}
+
+.starReviews .starButton {
+  width: 65px;
+}
+
+.col3 {
+  grid-column: 3;
+  display: grid;
+  grid-template-rows: 80px auto;
+  position: relative;
+  top: 10px;
+}
+
+.col3row1 {
+  grid-row: 1;
+}
+
+.productsFound {
+  position: relative;
+  top: 30px;
+  left: 2px;
+  font-size: 13px;
+}
+
+.orderBy {
+  position: relative;
+  left: 790px;
+  bottom: 5px;
+}
+
+.selectDropDown {
+  width: 150px;
+  height: 35px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+}
+
+.col3row2 {
+  grid-row: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 240px;
+  height: 555px;
+  position: relative;
+  left: 6px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.freeShipping {
+  width: 70px;
+  height: 17px;
+  background: black;
+  color: white;
+  font-size: 10px;
+  padding-top: 3px;
+  text-align: center;
+  position: relative;
+  left: 165px;
+  bottom: 5px;
+}
+
+.notFreeShipping {
+  width: 70px;
+  height: 17px;
+  color: white;
+  font-size: 10px;
+  padding-top: 3px;
+  text-align: center;
+  position: relative;
+  left: 165px;
+  bottom: 5px;
+}
+
+.card:hover {
+  border: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+.card:hover .addToCart {
+  background: #edb526;
+}
+
+.normalImg {
+  width: 230x;
+  height: 330px;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+}
+
+.itemTitle {
+  font-size: 16px;
+  position: relative;
+  bottom: 18px;
+}
+
+.itemTitle::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 110px;
+  width: 22px;
+  border-bottom: 2px solid #edb526;
+}
+
+.signAndPrice {
+  display: flex;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+  left: 95px;
+}
+
+.dollarSign {
+  position: relative;
+  top: 2px;
+  right: 2px;
+  font-size: 18px;
+}
+
+.itemPrice {
+  position: relative;
+  bottom: 6px;
+  font-size: 22px;
+}
+
+.itemInstallment {
+  position: relative;
+  bottom: 58px;
+  left: 90px;
+  font-size: 15px;
+  color: grey;
+  display: flex;
+}
+
+.itemInstallment h3 {
+  position: relative;
+  bottom: 5px;
+}
+
+.addToCart {
+  background: black;
+  color: white;
+  width: 230px;
+  height: 50px;
+  position: relative;
+  bottom: 50px;
+  border: none;
+  outline: none;
+}
+
+.addToCart:hover {
+  background: #edb526;
+}
+
+.col4 {
+  grid-column: 4;
+}
+
+.checkoutCart {
+  width: 450px;
+  min-height: 805px;
+  max-height: 100%;
+  background: #1a191e;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-y: scroll;
+}
+
+.cartToggle {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 15px;
+  background: white;
+  text-align: center;
+}
+
+.cart {
+  color: white;
+  position: relative;
+  bottom: 15px;
+  grid-column: 2;
+}
+
+.cartHeader {
+  display: flex;
+  font-size: 22px;
+  position: relative;
+  top: 10px;
+  left: 170px;
+  bottom: 30px;
+}
+
+.cartBody {
+  position: relative;
+}
+
+.cartSlot {
+  display: grid;
+  background: charcoal;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-top: 1px solid black;
+  height: 110px;
+}
+
+.leftSideSlot {
+  grid-column: 1;
+}
+
+.thumbnailImg {
+  width: 60px;
+  height: 85px;
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+.middleSideSlot {
+  grid-column: 2;
+  position: relative;
+  top: 15px;
+  right: 25px;
+}
+
+.middleSlot1 {
+  color: lightgrey;
+  font-size: 17px;
+}
+
+.middleSlot2 {
+  color: rgb(112, 112, 112);
+  font-size: 15px;
+  position: relative;
+  bottom: 19px;
+}
+
+.middleSlot3 {
+  color: rgb(112, 112, 112);
+  font-size: 15px;
+  position: relative;
+  bottom: 35px;
+}
+
+.rightSideSlot {
+  grid-column: 3;
+  color: #deaa26;
+  justify-self: end;
+  position: relative;
+  bottom: 15px;
+}
+
+.rightSlot1 {
+  background: transparent;
+  width: 25px;
+  font-size: 19px;
+  font-weight: bold;
+  outline: none;
+  position: relative;
+  top: 5px;
+  color: black;
+}
+
+.rightSlot2 {
+  position: relative;
+  right: 22px;
+}
+
+.rightSlotButtons {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 18px;
+}
+
+.rightSlotButtons button {
+  color: lightgrey;
+  background: black;
+} 
