@@ -31,7 +31,10 @@ export function Products() {
   function sum(num1, num2) {
     return num1 + num2
   }
-  let total = prices.reduce(sum, 0)
+
+  let total = 0
+
+  total = total + prices.reduce(sum, 0)
 
   let quantity = cart.map((item) => {
     return item.length
